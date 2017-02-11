@@ -246,9 +246,9 @@ namespace KOKR
                             {
                                 if (!ObviousAttack(P, (Colour == Pole.Green) ? Pole.Red : Pole.Green, false))
                                 {
-                                    moving.Redo(P); //
-                                    if (toDo) moving.move(P, Colour, ref i, ref j);
-                                    else P[i, j] = Pole.Can;
+                                    if (!toDo) moving.Redo(P); //
+                                    // moving.move(P, Colour, ref i, ref j);
+                                   // else P[i, j] = Pole.Can;
                                     return true;
                                 }
                             }
