@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace KOKR
 {
-        enum Pole
-        {
-            Green,
-            Red,
-            Can,
-            Cant
-        }
+    enum Pole
+    {
+        Green,
+        Red,
+        Can, //mozna klinąć
+        Cant //nie można i niekolorowe
+    }
 
-        enum BoolCheck
-        {
-            Win,
-            Loose,
-            Null, 
-            Draw
-        }
+    enum BoolCheck
+    {
+        Win,
+        Loose,
+        Null, //brak wyniku
+        Draw
+    }
 }

@@ -17,45 +17,20 @@ namespace KOKR
         {
             InitializeComponent();
 
-            game.prepare(this);
-            Form2 dialog = new Form2();
+            game.prepare(this);  //przygotowanie buttonw
+            Form2 dialog = new Form2();  //formatka dialogowa
             DialogResult i = dialog.ShowDialog();
-            if (Convert.ToInt16(i) == 7) game.FistMove();      
+            if (Convert.ToInt16(i) == 7) game.FistMove(); //if zaczyna AI wykonaj ruch      
 
         }
 
-      
-
-        private void Test ()
-        {
-            //button1.Text = "s";
-
-        }
-       
         public void choose(object sender, EventArgs e)
         {
-            
-            //System.Threading.Thread thr = new System.Threading.Thread(thr());
-            game.edit(sender);
-            //label1.Visible = false;
 
-        }
-        public void thr(Form1 send)
-        {
-            label1.Visible = true;
-        }
-
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-           // game.imCheck();
+            game.edit(sender); //wykonaj ruch - wyslij nazwe klikniętego buttona
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            game.Redo();
-        }
 
         private void button1_Click_2(object sender, EventArgs e)
         {

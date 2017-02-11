@@ -61,7 +61,6 @@
     </Compile>
     <Compile Include="Game.cs" />
     <Compile Include="Interface1.cs" />
-    <Compile Include="Interface2.cs" />
     <Compile Include="Moving.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
