@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace KOKR
 {
-    class loc
+    class loc //struktura odkładana na stos. Jako klasa, aby łatło konstruować
     {
         public int x;
         public int y;

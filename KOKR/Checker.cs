@@ -28,7 +28,7 @@ namespace KOKR
                     }
                 }
 
-            for (int i = 0; i < 11; i++)
+            for (int i = 0; i < 11; i++)  //wiersze
                 for (int j = 0; j < 15; j++)
                 {
                     if (pola[i, j] == pola[i + 1, j] && pola[i + 1, j] == pola[i + 2, j] && pola[i + 2, j] == pola[i + 3, j] && pola[i + 3, j] == pola[i + 4, j])
@@ -45,7 +45,7 @@ namespace KOKR
                     }
                 }
 
-            for (int i = 0; i < 11; i++)
+            for (int i = 0; i < 11; i++) //kolumny
                 for (int j = 0; j < 11; j++)
                 {
                     if (pola[i, j] == pola[i + 1, j + 1] && pola[i + 1, j + 1] == pola[i + 2, j + 2] && pola[i + 2, j + 2] == pola[i + 3, j + 3] && pola[i + 3, j + 3] == pola[i + 4, j + 4])
@@ -61,7 +61,7 @@ namespace KOKR
 
                     }
                 }
-            for (int i = 0; i < 11; i++)
+            for (int i = 0; i < 11; i++)  //przekątne
                 for (int j = 0; j < 11; j++)
                 {
                     if (pola[i+4, j] == pola[i + 3, j + 1] && pola[i + 3, j + 1] == pola[i + 2, j + 2] && pola[i + 2, j + 2] == pola[i + 1, j + 3] && pola[i + 1, j + 3] == pola[i, j + 4])

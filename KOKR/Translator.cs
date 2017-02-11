@@ -31,12 +31,9 @@ namespace KOKR
             {
                 for (int j = 0; j < 15; j++)
                 {
-                     if (B[i, j].BackColor == System.Drawing.Color.LightGreen)
+                     if (B[i, j].BackColor == System.Drawing.Color.LightGreen)  //jasny zielony ->ciemnozielony po jednym ruchu
                     {
-                        //B[i, j].BackColor = System.Drawing.Color.Aqua;
-                        //System.Threading.Thread.Sleep(1000);
                         B[i, j].BackColor = System.Drawing.Color.Green;
-                        // B[i, j].Enabled = false;
                     }
 
 
@@ -54,8 +51,6 @@ namespace KOKR
                     
                     if (P[i, j] == Pole.Green && B[i, j].BackColor != System.Drawing.Color.Green)
                     {
-                        //B[i, j].BackColor = System.Drawing.Color.Aqua;
-                        //System.Threading.Thread.Sleep(1000);
                         B[i, j].BackColor = System.Drawing.Color.LightGreen;
                         B[i, j].Enabled = false;
                     }
